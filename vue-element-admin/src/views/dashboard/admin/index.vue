@@ -2,6 +2,20 @@
   <div class="dashboard-editor-container">
     <panel-group/>
 
+    <el-tabs style="margin-top:0;" type="border-card" v-model="active">
+      <el-tab-pane key="1" label="账户对比概览" name="account-overview">
+        <div style="float: left;width: 400px">
+          <pie-chart ref="Chart"/>
+        </div>
+        <div style="float: right;width: 400px">
+          <line-chart :chart-data="lineChartData" ref="Chart"/>
+        </div>
+      </el-tab-pane>
+      <el-tab-pane key="2" label="视频TOP10" name="video-top10">
+        123232424324234234234234234234234234
+      </el-tab-pane>
+    </el-tabs>
+
     <el-row style="background:#fff;padding:16px 16px 0;margin-bottom:32px;">
       <line-chart :chart-data="lineChartData"/>
     </el-row>
@@ -83,14 +97,18 @@ export default {
   },
   data() {
     return {
-      lineChartData: lineChartData.newVisitis
+      lineChartData: lineChartData.newVisitis,
+      active: '1'
     }
   },
-  methods: {
-    handleSetLineChartData(type) {
-      this.lineChartData = lineChartData[type]
+  watch: {
+    active() {
+      this.$nextTick(() => {
+        this.$refs.Chart.resize();
+      })
     }
-  }
+  },
+  methods: {}
 }
 </script>
 
