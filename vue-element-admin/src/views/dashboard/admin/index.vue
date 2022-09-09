@@ -90,15 +90,12 @@
       </el-tab-pane>
     </el-tabs>
 
-    <el-row :gutter="8">
+    <el-row style="margin-top: 20px">
       <el-col :xs="{span: 24}" :sm="{span: 24}" :md="{span: 24}" :lg="{span: 12}" :xl="{span: 12}" style="padding-right:8px;margin-bottom:30px;">
         <transaction-table/>
       </el-col>
-      <el-col :xs="{span: 24}" :sm="{span: 12}" :md="{span: 12}" :lg="{span: 6}" :xl="{span: 6}" style="margin-bottom:30px;">
-        <todo-list/>
-      </el-col>
-      <el-col :xs="{span: 24}" :sm="{span: 12}" :md="{span: 12}" :lg="{span: 6}" :xl="{span: 6}" style="margin-bottom:30px;">
-        <box-card/>
+      <el-col :xs="{span: 24}" :sm="{span: 24}" :md="{span: 24}" :lg="{span: 12}" :xl="{span: 12}" style="margin-bottom:30px;">
+        <transaction-table/>
       </el-col>
     </el-row>
   </div>
@@ -178,6 +175,31 @@ export default {
         name: '杜小虎',
         address: '上海市普陀区金沙江路 1517 弄',
         tag: '公司'
+      }, {
+        date: '2017-05-01',
+        name: '杜小虎',
+        address: '上海市普陀区金沙江路 1519 弄',
+        tag: '家'
+      }, {
+        date: '2017-05-01',
+        name: '杜小虎',
+        address: '上海市普陀区金沙江路 1519 弄',
+        tag: '家'
+      }, {
+        date: '2017-05-01',
+        name: '杜小虎',
+        address: '上海市普陀区金沙江路 1519 弄',
+        tag: '家'
+      }, {
+        date: '2017-05-01',
+        name: '杜小虎',
+        address: '上海市普陀区金沙江路 1519 弄',
+        tag: '家'
+      }, {
+        date: '2017-05-01',
+        name: '杜小虎',
+        address: '上海市普陀区金沙江路 1519 弄',
+        tag: '家'
       }, {
         date: '2017-05-01',
         name: '杜小虎',
