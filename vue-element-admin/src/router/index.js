@@ -104,7 +104,7 @@ export const asyncRoutes = [
         ]
     },
     {
-        path: '/error',
+        path: '/video',
         component: Layout,
         name: 'ErrorPages',
         meta: {
@@ -113,9 +113,9 @@ export const asyncRoutes = [
         },
         children: [
             {
-                path: '401',
-                component: () => import('@/views/error-page/401'),
-                name: 'Page401',
+                path: 'create',
+                component: () => import('@/views/video-create/index'),
+                name: 'create',
                 meta: {title: '智能创作', icon: 'el-icon-s-platform'}
             },
             {
